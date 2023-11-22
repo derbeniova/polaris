@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+
+	<title>Polaris</title>
+	<style>
+		.kd_polaris {
+			width: 300px;
+			height: 600px;
+			background-color: #000;
+			background-image: url('bg.webp');
+			background-repeat: no-repeat;
+			background-position: 50% 100%;
+			background-size: 160% 99%;
+			position: relative;
+			display: block;
+		}
+		.kd_polaris_title {
+			text-align: center;
+			padding-top: 28px;
+			margin-bottom: 12px;
+		}
+		.kd_polaris_subTitle {
+			text-align: center;
+			opacity: 1;
+			animation: puls1 3s infinite;
+		}
+		.kd_polaris_btn {
+			position: absolute;
+			z-index: 1;
+			width: 100%;
+			bottom: 40px;
+			text-align: center;
+			cursor: pointer;
+		}
+		.kd_polaris_btn img {
+			animation: puls2 1.7s infinite;
+		}
+		.kd_polaris_footer_gr {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 158px;
+			background: linear-gradient(11deg, #000 7.99%, rgba(0, 0, 0, 0.00) 71.72%);
+		}
+		.kd_polaris_footer {
+			position: absolute;
+			z-index: 1;
+			width: 100%;
+			bottom: 5px;
+			text-align: center;
+			color: #fff;
+			font-size: 10px;
+			font-family: 'Montserrat', sans-serif;
+		}
+		.kd_polaris_cooks {
+			position: absolute;
+			overflow: hidden;
+			width: 100%;
+			bottom: 0;
+			height: 480px;
+			z-index: 0;
+		}
+		.kd_polaris_cook_white,
+		.kd_polaris_cook_black {
+			height: 108%;
+			width: auto;
+			position: absolute;			
+		}
+		.kd_polaris_cook_white {
+			left: -95px;
+			bottom: -33px;
+			z-index: -1;
+		}
+		.kd_polaris_cook_black {
+			right: -104px;
+			bottom: -42px;
+		}
+		.kd_polaris_add {
+			background: #fff;
+			border-radius: 2px;
+			color: #000;
+			font-size: 7px;
+			position: absolute;
+			top: 4px;
+			left: 4px;
+			font-family: 'Montserrat', sans-serif;
+			padding: 2px;
+		}
+		@keyframes puls2 {
+			50% {				
+				transform: scale(1.05,1.05);
+			}
+		}
+		@keyframes puls1 {
+			50% {				
+				opacity: .4;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<a href="%clickurl_1%" target="_blank" class="kd_polaris">
+		<div class="kd_polaris_add">РЕКЛАМА</div>
+		<div class="kd_polaris_title">
+			<img src="polaris_title.webp" width="142" height="22" alt="" />
+		</div>
+		<div class="kd_polaris_subTitle">
+			<img src="polaris_subtitle.webp" width="229" height="56" alt="" />
+		</div>
+		<div class="kd_polaris_cooks">
+			<img class="kd_polaris_cook_white" src="white.webp" alt="">
+			<img class="kd_polaris_cook_black" src="black.webp" alt="">
+		</div>
+		<div class="kd_polaris_btn">
+			<img src="btn.webp" width="221" height="46" alt="" />
+		</div>
+		<div class="kd_polaris_footer">
+			Реклама. ООО «ЭйДжиАй Электроникс» polaris.ru
+		</div>
+		<div class="kd_polaris_footer_gr"></div>
+	</a>
+
+</body>
+</html>
